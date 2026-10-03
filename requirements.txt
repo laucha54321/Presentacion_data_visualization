@@ -1,0 +1,12 @@
+# Manejo de datos (tablas)
+pandas>=2.0
+
+# Las tres librerías de visualización que comparamos
+matplotlib>=3.9
+seaborn>=0.13
+plotly>=5.18
+
+# Para abrir y ejecutar el notebook
+notebook>=7.0
+ipykernel>=6.0
+nbformat>=5.0
