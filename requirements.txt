@@ -1,5 +1,6 @@
-# Manejo de datos (tablas)
+# Manejo de datos (tablas) y cálculo numérico
 pandas>=2.0
+numpy>=1.24
 
 # Las tres librerías de visualización que comparamos
 matplotlib>=3.9
