@@ -1,31 +1,36 @@
 **Seminario técnico · UTN FRRo · Ortiz · Oliva · Ramirez · ~35 min**
 
-**Cómo leer este guion:** `[CLIC]` = cambio de diapositiva. `⚠ VERIFICAR` = dato que conviene confirmar con la fuente antes de decirlo. `[COMPLETAR]` = falta un dato que tienen que buscar ustedes.
+**Cómo leer este guion:** `[CLIC]` = cambio de diapositiva. `⚠ VERIFICAR` = dato que conviene confirmar con la fuente antes de decirlo.
 
-## Mapa de diapositivas (★ = nueva, hay que agregarla)
+## Mapa de diapositivas
 
-| #   | Diapositiva                         | Plantilla de la cátedra              | Quién     | Tiempo      |
-| --- | ----------------------------------- | ------------------------------------ | --------- | ----------- |
-| 1   | Portada                             | Introducción                         | Valentino | 00:00–01:45 |
-| 2★  | Objetivos                           | Objetivos                            | Valentino | 01:45–03:00 |
-| 3   | Perspectiva histórica               | Introducción                         | Valentino | 03:00–05:30 |
-| 4   | Mercado laboral / Data Translator   | Demanda laboral                      | Valentino | 05:30–07:45 |
-| 5   | Cuarteto de Anscombe                | Introducción (fundamento)            | Valentino | 07:45–11:00 |
-| 6   | Ecosistema analítico                | Comparativa                          | Laureano  | 11:00–12:30 |
-| 7   | Arquitectura de Matplotlib          | —                                    | Laureano  | 12:30–15:30 |
-| 8   | Motor de Seaborn                    | —                                    | Laureano  | 15:30–17:45 |
-| 9   | Paradigma Plotly                    | —                                    | Laureano  | 17:45–19:45 |
-| 10  | Principios de diseño                | —                                    | Laureano  | 19:45–21:15 |
-| 11★ | Comparativa, ventajas y desventajas | Comparativa + Ventajas y Desventajas | Laureano  | 21:15–23:00 |
-| 12  | Live demo "El Viaje del Dato"       | Live Demo                            | Facundo   | 23:00–31:30 |
-| 13  | Conclusión y preguntas              | Conclusión                           | Facundo   | 31:30–35:00 |
-| 14  | Fuentes                             | —                                    | —         | —           |
+| #   | Diapositiva                                    | Sección de la presentación            | Quién     | Tiempo      |
+| --- | ---------------------------------------------- | ------------------------------------- | --------- | ----------- |
+| 1   | Portada                                        | —                                     | Laureano | 00:00–01:45 |
+| 2   | Objetivos                                      | ESTRUCTURA Y METAS                    | Laureano | 01:45–03:00 |
+| 3   | Perspectiva histórica                          | PERSPECTIVA HISTÓRICA                 | Laureano | 03:00–05:30 |
+| 4   | Cuarteto de Anscombe                           | FUNDAMENTO TEÓRICO                    | Laureano | 05:30–08:30 |
+| 5   | Datasaurus Dozen                               | FUNDAMENTO TEÓRICO                    | Laureano | 08:30–10:00 |
+| 6   | Mercado laboral                                | MERCADO LABORAL                       | Valentino | 10:00–12:00 |
+| 7   | La tríada de visualización                     | HERRAMIENTAS DE VISUALIZACIÓN         | Valentino  | 12:00–13:00 |
+| 8   | Arquitectura de Matplotlib: tres capas         | INGENIERÍA DE SOFTWARE                | Valentino  | 13:00–15:00 |
+| 9   | Artist Layer                                   | INGENIERÍA DE SOFTWARE                | Valentino  | 15:00–16:00 |
+| 10  | Scripting Layer: pyplot vs OO                  | INGENIERÍA DE SOFTWARE                | Valentino  | 16:00–17:30 |
+| 11  | Matplotlib: tipos de gráficos y sintaxis       | INGENIERÍA DE SOFTWARE                | Valentino  | 17:30–19:00 |
+| 12  | Ejemplo código Matplotlib (grilla 2×2)         | INGENIERÍA DE SOFTWARE                | Valentino  | 19:00–19:45 |
+| 13  | Seaborn: estadística de alto nivel             | INGENIERÍA ESTADÍSTICA                | Facundo  | 19:45–21:30 |
+| 14  | Comparación Matplotlib vs Seaborn (código)     | (código lado a lado)                  | Facundo  | 21:30–22:30 |
+| 15  | Plotly: la figura es una especificación JSON   | ARQUITECTURA CLIENTE–SERVIDOR         | Facundo  | 22:30–24:00 |
+| 16  | Plotly: un gráfico interactivo en una llamada  | ARQUITECTURA CLIENTE–SERVIDOR         | Facundo  | 24:00–25:00 |
+| 17  | Principios de diseño y accesibilidad           | ARQUITECTURA CLIENTE–SERVIDOR         | Facundo  | 25:00–26:30 |
+| 18  | Comparativa: ventajas, desventajas             | INGENIERÍA ESTADÍSTICA                | Laureano  | 26:30–28:00 |
+| 19  | Live demo (notebook)                           | —                                     | Facundo   | 28:00–33:00 |
+| 20  | Conclusión: qué usar y para qué                | RESUMEN Y RECOMENDACIONES             | Laureano   | 33:00–35:00 |
+| 21  | Cierre y agradecimiento                        | HERRAMIENTAS DE VISUALIZACIÓN         | -   | 35:00       |
 
 ---
 
-# BLOQUE 1 (00:00–11:00)
-
-## Slide 1 · Portada e Introducción (00:00–01:45)
+# Slide 1 · Portada e Introducción (00:00–01:45)
 
 "Buenas tardes, profesores y compañeros. Somos Valentino Ortiz, Laureano Oliva y Facundo Ramirez, y hoy presentamos nuestro seminario técnico: **Data Visualization en Python: arquitectura, historia y ecosistema del análisis visual.**
 
@@ -35,7 +40,7 @@ La razón es biológica. Es de general conocimiento que al ser humano le resulta
 
 En los próximos 35 minutos vamos a ver de dónde viene este ecosistema, cómo funciona por dentro, qué lugar ocupa en el mercado laboral, y lo vamos a probar en vivo." `[CLIC]`
 
-## Slide 2 · Objetivos (01:45–03:00)
+# Slide 2 · Objetivos (01:45–03:00)
 
 "Para ordenar la presentación, nos propusimos tres objetivos.
 
@@ -45,7 +50,7 @@ En los próximos 35 minutos vamos a ver de dónde viene este ecosistema, cómo f
 
 **Tercero, desarrollar criterio de selección.** Que al final puedan responder con fundamento qué herramienta usar según la restricción del proyecto: un PDF para publicar, una exploración rápida, o un tablero interactivo." `[CLIC]`
 
-## Slide 3 · Perspectiva histórica (03:00–05:30)
+# Slide 3 · Perspectiva histórica (03:00–05:30)
 
 "Para entender las herramientas de hoy, conviene conocer los problemas que intentaron resolver.
 
@@ -55,26 +60,11 @@ Ahora, el software. A comienzos de los 2000, **MATLAB** era el estándar para gr
 
 En ese contexto, **John D. Hunter**, un neurobiólogo que hacía una investigación posdoctoral y analizaba señales cerebrales de pacientes con epilepsia, había construido su aplicación de análisis en MATLAB. A medida que la aplicación crecía, MATLAB se le quedó chico como lenguaje de programación y decidió rehacerla en Python. Pero en Python no encontró un paquete de gráficos 2D que cumpliera lo que necesitaba: gráficos de calidad de publicación, salida para documentos científicos, posibilidad de integrarlo en una aplicación, y que fuera fácil de usar.
 
-Entonces hizo lo que haría cualquier programador: lo escribió él mismo. Y decidió imitar los comandos de gráficos de MATLAB, dado que mucha gente ya los conocía, evitando a los usuarios (que provenían de MATLAB) de esta nueva tecnología tener que padecer una curva de aprendizaje. Así nació **Matplotlib, en 2003**: un proyecto personal pensado para resolver un problema médico-científico que terminó volviéndose la base de gran parte del ecosistema científico de Python. Pandas y Seaborn, por ejemplo, dibujan por debajo con Matplotlib."
-## Slide 4 · Demanda laboral (05:30–06:30)
+Entonces hizo lo que haría cualquier programador: lo escribió él mismo. Y decidió imitar los comandos de gráficos de MATLAB, dado que mucha gente ya los conocía, evitando a los usuarios (que provenían de MATLAB) de esta nueva tecnología tener que padecer una curva de aprendizaje. Así nació **Matplotlib, en 2003**: un proyecto personal pensado para resolver un problema médico-científico que terminó volviéndose la base de gran parte del ecosistema científico de Python. Pandas y Seaborn, por ejemplo, dibujan por debajo con Matplotlib." `[CLIC]`
 
-_Contenido sugerido para la diapositiva (poco texto):_
+# Slide 4 · El Cuarteto de Anscombe (05:30–08:30)
 
-- **WEF, Future of Jobs 2025:** big data entre los roles de mayor crecimiento; pensamiento analítico = habilidad más buscada.
-- **Avisos en Argentina:** SQL + Python + Power BI/Tableau (a veces Matplotlib y Seaborn).
-- _1 o 2 capturas de avisos reales, con fecha._
-
-"Un punto rápido sobre la demanda laboral. Según el Foro Económico Mundial, en su informe _Future of Jobs 2025_, entre los roles de más rápido crecimiento están los especialistas en big data, y el pensamiento analítico es la habilidad central más buscada: siete de cada diez empresas la consideran esencial.
-
-En Argentina, los avisos de Data Analyst suelen pedir SQL, Python y una herramienta de dashboards como Power BI o Tableau, y algunos mencionan directamente Matplotlib y Seaborn. [mostrar captura] En resumen: no alcanza con analizar, hay que saber comunicar visualmente." `[CLIC]`
-
-> **Fuentes de esta slide:** World Economic Forum, _The Future of Jobs Report 2025_ (publicado en enero de 2025; weforum.org). Avisos de ejemplo encontrados en la búsqueda (verificá que sigan activos y sacá captura con fecha): "Data Analyst – SQL / Python / Power BI (Híbrido, CABA)" en Indeed Argentina, que pide Python y Power BI y/o Tableau; y "Data Analyst" de Novo Space en Buenos Aires, que pide Power BI y Python con Pandas, NumPy, Matplotlib y Seaborn (figura como cerrado, usalo igual como ejemplo con la fecha o buscá uno vigente). Se eliminaron "Data Translator", el "70%" y las empresas nombradas (Globant, Mercado Libre, YPF) porque no tenían respaldo.
-
-## Slide 5 · El Cuarteto de Anscombe (06:30–11:00)
-
-_Con la slide de demanda laboral más corta, te sobra tiempo: usalo para mostrar bien los 4 gráficos y hacer una pausa._
-
-"Antes de pasarle la palabra a X, un experimento clásico que demuestra por qué graficar es una etapa obligatoria del análisis.
+"Para comprender el porque de la importancia de la visualización de datos, vamos a demostrar un clásico experimento, que demuestra por qué graficar es una etapa obligatoria del análisis.
 
 En **1973**, el estadístico británico **Francis Anscombe** construyó cuatro conjuntos de datos de 11 pares (X, Y) cada uno. Si los analizamos solo con estadísticos de resumen, son prácticamente idénticos:
 - media de X: 9,0; media de Y: 7,50;
@@ -88,108 +78,69 @@ Un informe tabular diría que son cuatro fenómenos indistinguibles. [PAUSA] Aho
 - **III**: una relación lineal perfecta, pero un único outlier cambia la recta.
 - **IV**: todos los puntos tienen X = 8, salvo uno lejano que, por sí solo, fija la pendiente.
 
-La lección que nos brinda este caso es que **los mismos números pueden esconder realidades opuestas.** Sin el gráfico, tomamos decisiones basadas en ilusiones estadísticas. Y esta idea tiene una versión moderna, mucho más fácil de recordar. En 2016, el especialista en visualización Alberto Cairo creó el **Datasaurus**: un conjunto de puntos que, al graficarse, dibuja un dinosaurio. En 2017, dos investigadores de Autodesk, Justin Matejka y George Fitzmaurice, tomaron ese dinosaurio y generaron otros doce conjuntos con formas muy distintas —una estrella, un círculo, una X— que comparten con él la misma media, la misma desviación estándar y la misma correlación, hasta el segundo decimal. `[mostrar imagen del Datasaurus Dozen]` Es Anscombe, pero con un dinosaurio: **mismos números, dibujos completamente distintos.**
+La lección que nos brinda este caso es que **los mismos números pueden esconder realidades opuestas.** Sin el gráfico, tomamos decisiones basadas en ilusiones estadísticas." `[CLIC]`
+
+# Slide 5 · El Datasaurus Dozen (08:30–10:00)
+
+"Y esta idea tiene una versión moderna, mucho más fácil de recordar. En 2016, el especialista en visualización Alberto Cairo creó el **Datasaurus**: un conjunto de puntos que, al graficarse, dibuja un dinosaurio. En 2017, dos investigadores de Autodesk, Justin Matejka y George Fitzmaurice, tomaron ese dinosaurio y generaron otros doce conjuntos con formas muy distintas —una estrella, un círculo, una X— que comparten con él la misma media, la misma desviación estándar y la misma correlación, hasta el segundo decimal. `[mostrar imagen del Datasaurus Dozen]` Es Anscombe, pero con un dinosaurio: **mismos números, dibujos completamente distintos.**
 
 Link al informe de Datasaurus: https://cran.r-project.org/web/packages/datasauRus/vignettes/Datasaurus.html
 
-Ahora X nos cuenta cómo está construido por dentro el software que nos permite ver esto." `[CLIC]`
+# Slide 6 · Demanda laboral (10:00–12:00)
 
----
+"Un punto importante sobre la demanda laboral. Según datos de Randstad y la Encuesta de Sueldos de SysArmy 2026, ciencia de datos y analítica **lideran la demanda y ofrecen las mejores remuneraciones** del sector tecnológico argentino. Se buscan especialistas en Business Intelligence y analítica avanzada en empresas de todos los tamaños.
 
-# BLOQUE 2 (11:00–23:00)
+Los perfiles con más tracción son **Data Engineer**, que construye y mantiene los pipelines de datos, y **Data Scientist / AI-ML Engineer**, con demanda que crece a doble dígito.
 
-## Slide 6 · El ecosistema analítico (11:00–12:30)
+En cuanto a las competencias más buscadas, los datos son claros: **relevamiento y documentación de requerimientos** encabeza con un 74 %, seguido de **SQL** con un 59 %, **Python** con un 44 % y **alfabetización en IA** con un 35 %. Las más pedidas son las fundacionales, no las más novedosas.
 
-"Gracias, X. Buenas tardes a todos.
+¿Quién contrata? Multinacionales como L'Oréal, Novartis, PedidosYa y Naranja X; GlobalLogic planea incorporar más de 450 profesionales en Argentina durante 2026; y hay ofertas 100 % remotas desde Argentina en empresas como EPAM, Webflow y Newsela.
 
-El ecosistema de visualización en Python es enorme, pero se ordena alrededor de tres librerías que llamamos la **tríada**.
+En resumen: no alcanza con analizar, hay que saber **comunicar visualmente**." `[CLIC]`
 
-**Matplotlib** es la librería madre: el motor de bajo nivel, con control total sobre cada elemento, a cambio de más código. **Seaborn** es una capa de alto nivel construida sobre Matplotlib, pensada para exploración estadística rápida con DataFrames de Pandas. Y por último, **Plotly** es el estándar para gráficos interactivos y web.
+# Slide 7 · La tríada de visualización en Python (12:00–13:00)
+
+"El ecosistema de visualización en Python es enorme, pero se ordena alrededor de tres librerías que llamamos la **tríada**.
+
+**Matplotlib** es la librería madre: siendo el motor de bajo nivel, con control total sobre cada elemento, pero a cambio de más código. **Seaborn** es una capa de alto nivel construida sobre Matplotlib, pensada para exploración estadística rápida con DataFrames de Pandas. Y por último, **Plotly** es el estándar para gráficos interactivos y web.
 
 Para elegir entre ellas hay que entender qué pasa por dentro de cada una." `[CLIC]`
 
-## Slide 7 · Arquitectura de Matplotlib (11:30–14:30)
+# Slide 8 · Arquitectura de Matplotlib: tres capas (13:00–15:00)
 
-_Contenido sugerido para la diapositiva:_ diagrama de 3 capas (Scripting → Artist → Backend) y, al costado, este mini-código para contrastar los dos estilos:
-
-*Esta diapo la podemos dividir en 2 o 3, representando cada capa con ejemplos concretos*
-
-```python
-import matplotlib.pyplot as plt
-
-# Estilo pyplot (estado global)
-plt.plot([1, 2, 3], [1, 4, 9])
-plt.title("pyplot")
-plt.show()
-
-# Estilo orientado a objetos (explícito)
-fig, ax = plt.subplots()
-ax.plot([1, 2, 3], [1, 4, 9])
-ax.set_title("Orientado a objetos")
-plt.show()
-```
-
-"Matplotlib está organizada en **tres capas**. Las vamos a ver de abajo hacia arriba, porque cada una se apoya en la anterior.
+"Comenzando con Matplotlib, observamos que se encuentra organizada en **tres capas**. Las vamos a ver de abajo hacia arriba, dado que cada una se apoya en la anterior.
 
 **Backend Layer.** Es la capa más baja y la que sabe producir una salida concreta. Se define con tres clases abstractas: `FigureCanvas`, el área sobre la que se dibuja; `Renderer`, que ejecuta el dibujo; y `Event`, que gestiona la entrada del usuario, como el mouse o el teclado. Hay backends no interactivos, que generan archivos —Agg produce imágenes PNG, y existen backends propios para PDF, SVG y PostScript— y backends interactivos, que muestran la figura en una ventana de escritorio, como Qt o Tk.
 
-**Artist Layer.** Es el núcleo de la librería. Todo lo que se ve en una figura es un objeto `Artist`: líneas, textos, ejes, leyendas. Hay dos tipos: las **primitivas**, como `Line2D`, `Rectangle` o `Text`, y los **contenedores**, como `Figure`, `Axes` y `Axis`, que agrupan a otros artistas y forman una jerarquía. Cada Artist conoce sus coordenadas y sabe dibujarse a sí mismo cuando recibe un Renderer; para eso transforma coordenadas de datos en coordenadas de pantalla.
+**Artist Layer.** Es el núcleo de la librería. Todo lo que se ve en una figura es un objeto `Artist`. Lo vamos a ver en detalle en la próxima diapositiva.
 
-**Scripting Layer.** Es `pyplot`, una interfaz procedimental que imita a MATLAB. Mantiene un **estado global**: recuerda cuál es la figura y cuáles son los ejes actuales, y por eso `plt.plot()` funciona sin crear nada de forma explícita. Es muy cómodo para scripts cortos, pero en código más grande, con varias figuras, ese estado implícito se vuelve ambiguo.
+**Scripting Layer.** Es `pyplot`, la interfaz que usamos todos los días. También la vamos a detallar." `[CLIC]`
 
-Por eso, en software mantenible se usa la interfaz **orientada a objetos**: llamamos a `plt.subplots()` solo para crear la `Figure` y los `Axes`, y trabajamos con métodos explícitos como `ax.plot()` o `ax.set_title()`. Una aclaración de terminología: `Axes` es el área de dibujo con su sistema de coordenadas, y cada `Axes` contiene dos objetos `Axis`, el eje X y el eje Y. Una `Figure` puede tener varios `Axes`: son los subplots.
+# Slide 9 · Artist Layer: todo lo que se ve es un Artist (15:00–16:00)
+
+"Profundicemos en la capa Artist. Todo lo que se ve en una figura de Matplotlib es un objeto `Artist`. Hay dos tipos:
+
+Las **primitivas**, como `Line2D`, `Rectangle` o `Text`, que son los elementos de dibujo.
+
+Y los **contenedores**, como `Figure`, `Axes` y `Axis`, que agrupan a otros artistas y forman una jerarquía. En el diagrama pueden ver: la `Figure` contiene un `Axes`, y este a su vez contiene un `Axis X`, un `Axis Y`, objetos `Line2D`, `Text`, etc.
+
+Cada Artist conoce sus coordenadas y sabe dibujarse a sí mismo cuando recibe un Renderer; para eso transforma coordenadas de datos en coordenadas de pantalla.
+
+Una aclaración de terminología importante: `Axes` es el **área de dibujo** con su sistema de coordenadas, y cada `Axes` contiene dos objetos `Axis`, el eje X y el eje Y. Una `Figure` puede tener varios `Axes`: son los subplots." `[CLIC]`
+
+# Slide 10 · Scripting Layer: pyplot y la interfaz orientada a objetos (16:00–17:30)
+
+"La capa de Scripting tiene dos estilos.
+
+El primero es **pyplot**, que mantiene un **estado global**: recuerda cuál es la figura y cuáles son los ejes actuales. Imita a MATLAB, y por eso `plt.plot()` funciona sin crear nada de forma explícita. Es muy cómodo para scripts cortos, pero en código más grande, con varias figuras, ese estado implícito se vuelve ambiguo.
+
+El segundo es la interfaz **orientada a objetos**: llamamos a `plt.subplots()` solo para crear la `Figure` y los `Axes`, y después trabajamos con métodos explícitos como `ax.plot()` o `ax.set_title()`. Es el estilo recomendado en software mantenible.
+
+En la diapositiva pueden ver los dos ejemplos lado a lado. El resultado visual es el mismo, pero la claridad del código es muy distinta.
 
 **Para resumir, con una analogía:** pensemos en un taller de impresión. `pyplot` es el pedido que le hacemos al asistente: 'dibujame una línea'. La capa Artist es el diseñador, que sabe qué elementos componen el dibujo y dónde va cada uno. Y el backend es la imprenta, que lo convierte en el producto final: un PNG, un PDF o una ventana en pantalla." `[CLIC]`
 
-> Si vas justo de tiempo, podés omitir la frase de las transformaciones de coordenadas y los nombres de las primitivas (`Line2D`, `Rectangle`, `Text`). Para la diapositiva, cambiá la descripción del Backend, que dice "Habla con el SO local", por algo más preciso: "Renderiza a archivos (PNG, PDF, SVG) y a ventanas (Qt, Tk)". Corrección respecto de v3: Cairo es un backend opcional distinto; PDF y SVG tienen backends propios.
-
-## Slide 8★ · Matplotlib: tipos de gráficos y sintaxis (14:30–17:00)
-
-_Contenido sugerido para la diapositiva:_ la tabla de abajo + el código con su resultado (imagen `imagenes/matplotlib_ejemplo.png`).
-
-*Esta diapo también podriamos divirla en dos: tabla con sintaxis - codigo y salida*
-
-
-| Familia                   | Función                                                                              | Sintaxis básica                                  |
-| ------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------ |
-| Líneas                    | `ax.plot`                                                                            | `ax.plot(x, y, label="serie", color="tab:blue")` |
-| Dispersión                | `ax.scatter`                                                                         | `ax.scatter(x, y, s=tamaños, c=colores)`         |
-| Barras                    | `ax.bar` / `ax.barh`                                                                 | `ax.bar(categorias, alturas)`                    |
-| Histograma                | `ax.hist`                                                                            | `ax.hist(datos, bins=20)`                        |
-| Cajas                     | `ax.boxplot`                                                                         | `ax.boxplot(datos)`                              |
-| Imágenes / mapas de calor | `ax.imshow`                                                                          | `ax.imshow(matriz, cmap="viridis")`              |
-| Personalización           | `ax.set_title`, `set_xlabel`, `set_ylabel`, `set_xlim`, `legend`, `grid`, `annotate` | `ax.set_title("Título")`                         |
-| Disposición y salida      | `plt.subplots`, `fig.tight_layout`, `fig.savefig`                                    | `fig.savefig("grafico.pdf")`                     |
-
-**Código del ejemplo (completo):**
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.linspace(0, 10, 100)
-rng = np.random.default_rng(42)
-
-fig, axs = plt.subplots(1, 3, figsize=(11, 3.4))
-
-axs[0].plot(x, np.sin(x), label="sin(x)")
-axs[0].plot(x, np.cos(x), label="cos(x)")
-axs[0].set_title("plot: líneas")
-axs[0].set_xlabel("x")
-axs[0].legend()
-
-axs[1].bar(["A", "B", "C"], [12, 7, 15], color="#4C78A8")
-axs[1].set_title("bar: barras")
-axs[1].set_ylabel("valor")
-
-axs[2].hist(rng.normal(0, 1, 500), bins=20, color="#F58518")
-axs[2].set_title("hist: histograma")
-axs[2].set_xlabel("valor")
-
-fig.tight_layout()
-fig.savefig("matplotlib_ejemplo.png", dpi=150)
-plt.show()
-```
+# Slide 11 · Matplotlib: tipos de gráficos y sintaxis (17:30–19:00)
 
 "Ya vimos cómo está construida Matplotlib; veamos qué nos ofrece. Los métodos del objeto `Axes` se agrupan en cuatro familias.
 
@@ -199,13 +150,21 @@ plt.show()
 
 **Disposición y salida.** `plt.subplots` crea la `Figure` con una grilla de `Axes`, `tight_layout` acomoda los espacios, y `savefig` exporta: el formato lo define la extensión, `.png`, `.pdf` o `.svg`.
 
-La sintaxis siempre sigue el mismo patrón: `ax.tipo_de_gráfico(datos, parámetros estéticos)`, y después los `set_*` para etiquetar. Parámetros como `color`, `label`, `alpha` o `linewidth` funcionan en casi todos.
+La sintaxis siempre sigue el mismo patrón: `ax.tipo_de_gráfico(datos, parámetros estéticos)`, y después los `set_*` para etiquetar." `[CLIC]`
 
-**Veámoslo en el ejemplo.** `[mostrar código e imagen]` Creamos una `Figure` con tres `Axes` en una fila: `axs[0]`, `axs[1]` y `axs[2]`. En el primero, dos llamadas a `plot` con `label` y un `legend` dibujan seno y coseno. En el segundo, `bar` grafica tres categorías. En el tercero, `hist` agrupa 500 valores aleatorios en 20 intervalos. Cada `Axes` es independiente: tiene su propio título y sus propias etiquetas. Esto es el paradigma orientado a objetos en acción, y es el control que Matplotlib nos da." `[CLIC]`
-## Slide 8 · El motor estadístico de Seaborn (15:30–17:45)
+# Slide 12 · Ejemplo código Matplotlib: grilla 2×2 (19:00–19:45)
 
-"Con Matplotlib, nosotros agrupamos, filtramos y calculamos promedios con Pandas antes de graficar. **Seaborn** trabaja directamente sobre el DataFrame. Cuando ejecutamos algo como `sns.lineplot()` o `sns.barplot()`, internamente:
+"Veámoslo en el ejemplo. `[mostrar código e imagen]` Creamos una `Figure` con cuatro `Axes` en una grilla 2×2. En `axs[0,0]`, dos llamadas a `plot` con `label` y un `legend` dibujan seno y coseno. En `axs[0,1]`, `bar` grafica tres categorías. En `axs[1,0]`, `hist` agrupa 500 valores aleatorios en 20 intervalos. Y en `axs[1,1]`, `scatter` muestra puntos de seno con ruido. Cada `Axes` es independiente: tiene su propio título y sus propias etiquetas. Esto es el paradigma orientado a objetos en acción, y es el control que Matplotlib nos da." `[CLIC]`
 
+# Slide 13 · Seaborn: estadística de alto nivel sobre Matplotlib (19:45–21:30)
+
+"Con Matplotlib, nosotros agrupamos, filtramos y calculamos promedios con Pandas antes de graficar. En cambio, **Seaborn** trabaja directamente sobre el DataFrame.
+
+**Cómo se usa.** La entrada es un DataFrame de Pandas en formato _tidy_: una fila por observación y una columna por variable. En lugar de pasarle listas de números, le indicamos qué columna cumple cada rol visual con tres parámetros: `data`, el DataFrame; `x` e `y`, las columnas de cada eje; y `hue`, la columna que define el color.
+
+Sus funciones se agrupan por el tipo de pregunta que responden: **relacionales**, como `scatterplot` y `lineplot`; de **distribución**, como `histplot` y `kdeplot`; **categóricas**, como `boxplot`, `barplot` y `countplot`; de **regresión**, como `regplot` y `lmplot`; **matrices**, como `heatmap`; y **grillas** de varios gráficos, como `pairplot`.
+
+Y cuando ejecutamos una de ellas, internamente pasa por cuatro pasos:
 1. **Agrega** los datos: agrupa por categorías y calcula la medida de resumen, por defecto la media.
 2. **Estima la incertidumbre**: por defecto usa _bootstrapping_, un remuestreo repetido, para calcular intervalos de confianza del 95 % y dibujarlos como bandas o barras de error.
 3. **Aplica paletas** y estilos pensados para la percepción visual.
@@ -213,72 +172,35 @@ La sintaxis siempre sigue el mismo patrón: `ax.tipo_de_gráfico(datos, parámet
 
 Seaborn nos da velocidad en la fase exploratoria. A cambio, cedemos control fino y, cuando necesitamos personalizar a fondo, bajamos a Matplotlib; de hecho, los gráficos de Seaborn son objetos de Matplotlib." `[CLIC]`
 
-> ⚠ Se quitó "Millones de filas crudas" de la diapositiva: el bootstrapping sobre datos muy grandes es lento, así que no es un punto fuerte de Seaborn.
+# Slide 14 · Comparación Matplotlib vs Seaborn: código lado a lado (21:30–22:30)
 
-## Slide 9 · Seaborn: funcionamiento y ejemplo (17:00–19:30)
+"Para ver la diferencia en la práctica, comparamos cómo se hace el **mismo gráfico** —propina promedio por día— con ambas librerías.
 
-_Contenido sugerido para la diapositiva:_ código + resultado (imagen `imagenes/seaborn_ejemplo.png`) y una línea con las familias de funciones.
+A la izquierda, **Matplotlib**: primero tenemos que agrupar manualmente con Pandas (`tips.groupby('day')['tip'].mean()`), después crear la figura, dibujar las barras con `ax.bar`, agregar las etiquetas con `ax.bar_label`, setear título y label del eje Y, y desactivar la grilla del eje X. Son varias líneas de código.
 
-**Código del ejemplo (completo):**
+A la derecha, **Seaborn**: una sola llamada a `sns.barplot` con `data=tips, x='day', y='tip', estimator='mean'`. Seaborn agrupa, calcula la media y dibuja, todo internamente. Después solo seteamos título y label con `ax.set()`.
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
+El resultado visual es muy similar, pero la diferencia en código es notable. Eso sí, fíjense que en la versión de Seaborn podrían aparecer barras de error con intervalo de confianza; acá las desactivamos con `errorbar=None` para que sean comparables. Esa es justamente la estadística que Seaborn agrega por defecto." `[CLIC]`
 
-sns.set_theme(style="whitegrid")
-tips = sns.load_dataset("tips")      # DataFrame de Pandas: una fila por cuenta
+# Slide 15 · Plotly: la figura es una especificación JSON (22:30–24:00)
 
-ax = sns.barplot(data=tips, x="day", y="total_bill", hue="sex")
-ax.set_title("Cuenta promedio por día y sexo")
-ax.set_ylabel("Cuenta total promedio (USD)")
-sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
-
-plt.tight_layout()
-plt.show()
-```
-
-"**Funcionamiento.** Seaborn es una capa de alto nivel construida sobre Matplotlib que trabaja directamente sobre un DataFrame de Pandas en formato _tidy_: una fila por observación y una columna por variable. En lugar de pasarle listas de números, le indicamos qué columna cumple cada rol visual con tres parámetros: `data`, el DataFrame; `x` e `y`, las columnas de cada eje; y `hue`, la columna que define el color.
-
-Sus funciones se agrupan por el tipo de pregunta que responden: relacionales, como `scatterplot` y `lineplot`; de distribución, como `histplot` y `kdeplot`; categóricas, como `boxplot`, `barplot` y `countplot`; de regresión, como `regplot` y `lmplot`; matrices, como `heatmap`; y grillas de varios gráficos, como `pairplot`.
-
-Y cuando ejecutamos una de ellas, internamente: primero **agrupa** los datos y calcula una medida de resumen, por defecto la media; segundo, **estima la incertidumbre** con _bootstrapping_, un remuestreo repetido, para calcular un intervalo de confianza del 95 %; tercero, aplica una paleta de colores; y cuarto, **traduce todo a objetos de Matplotlib** y los dibuja.
-
-**Veámoslo en el ejemplo.** `[mostrar código e imagen]` Usamos el dataset `tips`: una fila por cuenta de un restaurante. Con una sola línea, `sns.barplot`, le decimos: tomá el DataFrame, poné el día en X, la cuenta total en Y y separá por color según el sexo. Seaborn agrupa por día y sexo, calcula la cuenta promedio de cada grupo y dibuja las barras, con una línea negra que muestra el intervalo de confianza del 95 %. Nosotros no calculamos ninguna media. Fíjense que el viernes tiene intervalos muy anchos: hay pocas observaciones, y el gráfico lo comunica sin que se lo pidamos. Además, la función devuelve un `Axes` de Matplotlib, así que seguimos personalizando con `set_title` y `set_ylabel`.
-
-**En resumen, con una analogía:** con Matplotlib calculamos y dibujamos nosotros, como hacer las cuentas y el gráfico a mano. Seaborn es como tener un analista que ya resumió la tabla y solo nos pide que le digamos qué comparar." `[CLIC]`
-
-## Slide 10 · Plotly: funcionamiento y ejemplo (19:30–22:00)
-
-_Contenido sugerido para la diapositiva:_ código + **captura de la figura abierta en el navegador o en Jupyter, mostrando un tooltip** (no es una imagen que se pueda generar sin navegador: sacala vos corriendo el código). Sumá un esquema mínimo: Python → JSON → Plotly.js.
-
-**Código del ejemplo (completo):**
-```python
-import plotly.express as px
-
-tips = px.data.tips()     # dataset incluido en Plotly
-
-fig = px.scatter(
-    tips,
-    x="total_bill", y="tip",
-    color="day",
-    hover_data=["sex", "size"],
-    title="Propina vs. cuenta total"
-)
-
-fig.show()
-```
-
-"**Funcionamiento.** Plotly ofrece dos interfaces. `plotly.express` es la de alto nivel: una sola llamada crea un gráfico completo, con funciones como `px.scatter`, `px.line`, `px.bar`, `px.histogram` o `px.box`. `plotly.graph_objects` es la de bajo nivel: construimos la figura trazo por trazo con `go.Figure` y `go.Scatter`, con control total.
+"Plotly ofrece dos interfaces. `plotly.express` es la de alto nivel: una sola llamada crea un gráfico completo, con funciones como `px.scatter`, `px.line`, `px.bar`, `px.histogram` o `px.box`. `plotly.graph_objects` es la de bajo nivel: construimos la figura trazo por trazo con `go.Figure` y `go.Scatter`, con control total.
 
 Las dos producen el mismo objeto: una `Figure`, que en esencia es un diccionario con dos claves: `data`, una lista de **trazas**, donde cada traza es una serie con su tipo de gráfico; y `layout`, que guarda títulos, ejes y márgenes.
 
-Cuando llamamos a `fig.show()`, Python no dibuja nada: **serializa** esa figura a JSON y se la entrega al navegador, o a la celda de Jupyter. Ahí, la librería JavaScript **Plotly.js** la renderiza, por defecto como SVG, y con WebGL cuando hay muchísimos puntos. Por eso el zoom, el desplazamiento, el filtrado desde la leyenda y los tooltips los procesa el navegador, no el kernel de Python.
+Cuando llamamos a `fig.show()`, Python no dibuja nada: **serializa** esa figura a JSON y se la entrega al navegador, o a la celda de Jupyter. Ahí, la librería JavaScript **Plotly.js** la renderiza, por defecto como SVG, y con WebGL cuando hay muchísimos puntos. Por eso el zoom, el desplazamiento, el filtrado desde la leyenda y los tooltips los procesa el navegador, no el kernel de Python." `[CLIC]`
 
-**Veámoslo en el ejemplo.** `[mostrar código y captura]` Con el mismo dataset `tips`, una sola llamada a `px.scatter` arma un gráfico de dispersión con la cuenta total en X y la propina en Y, un color distinto por cada día, y con `hover_data` agregamos al tooltip el sexo y el tamaño del grupo. Lo que ven no es una imagen estática: si paso el cursor sobre un punto, aparece su información; si hago clic en un día de la leyenda, lo oculto; y si hago zoom, el gráfico se reencuadra.
+# Slide 16 · Plotly: un gráfico interactivo en una llamada (24:00–25:00)
 
-**En resumen, con una analogía:** Python escribe la receta, el JSON, y el navegador cocina el plato." `[CLIC]`
+"Veámoslo con un ejemplo concreto. Acá usamos `px.bar` para graficar la propina promedio por día, el mismo gráfico que hicimos con Matplotlib y Seaborn.
 
-## Slide 11 · Principios de diseño (22:00–23:30)
+Con una sola llamada configuramos todo: el DataFrame, los ejes, los colores, las etiquetas, el template visual y hasta el formato de los números con `text_auto`. Después ajustamos el ancho de las barras y la posición del texto con `fig.update_traces`.
+
+Lo que ven no es una imagen estática: si paso el cursor sobre una barra, aparece su valor exacto; puedo hacer zoom, y puedo descargar un PNG con el ícono de la cámara. Todo eso lo resuelve el navegador, no Python.
+
+Ese es el paradigma de Plotly: **Python escribe la receta —el JSON— y el navegador cocina el plato.**" `[CLIC]`
+
+# Slide 17 · Principios de diseño y accesibilidad (25:00–26:30)
 
 "Que el código funcione no alcanza. Para seguir los principios del diseño debemos aplicar las siguientes reglas prácticas:
 * **Maximizar el data-ink ratio de Tufte.** La mayor parte de la tinta debe representar datos: fuera bordes pesados, fondos oscuros y grillas recargadas.
@@ -286,187 +208,89 @@ Cuando llamamos a `fig.show()`, Python no dibuja nada: **serializa** esa figura 
 * **Color con intención.** El color es una codificación de datos, no decoración: paletas categóricas para variables cualitativas, secuenciales o divergentes para cuantitativas.
 * **Accesibilidad.** Cuidamos el contraste, siguiendo criterios como los de WCAG, y usamos paletas perceptualmente uniformes como Viridis o Cividis, que se leen bien también con daltonismo." `[CLIC]`
 
-## Slide 12★ · Comparativa, ventajas y desventajas (21:15–23:00)
-
-_Contenido sugerido para la diapositiva (tabla):_
-
-|Herramienta|Ventajas|Desventajas|Cuándo usarla|
-|---|---|---|---|
-|**Matplotlib**|Control total; salida vectorial (PDF/SVG); base del ecosistema|Verboso; curva de aprendizaje alta; estética por defecto básica|Publicaciones y reportes estáticos|
-|**Seaborn**|Rápido; estadística integrada; buena estética|Menos control fino; depende de Matplotlib|EDA (exploración inicial)|
-|**Plotly**|Interactivo; despliegue web; integra con Dash/Streamlit|HTML pesado con muchos datos; menos control para impresión|Dashboards y apps|
-|**Otras**|Altair/Bokeh (declarativo / interactivo), ggplot2 (R), Power BI/Tableau (BI sin código)|Menos flexibles, otro ecosistema o licencias|Según equipo y contexto|
+# Slide 18 · Comparativa: ventajas, desventajas y cuándo usar cada una (26:30–28:00)
 
 "Sintetizamos en una matriz.
 
-**Matplotlib**: cuenta con control total y salida de calidad de publicación, a cambio de más código y una curva alta. **Seaborn**: rapidez y estadística lista, a cambio de menos control fino. **Plotly**: interactividad y despliegue web, pero con muchísimos puntos el HTML se vuelve pesado y no es ideal para imprimir.
+**Matplotlib**: cuenta con control total y salida de calidad de publicación (PDF/SVG), y es la base del ecosistema. A cambio: es verboso, tiene una curva de aprendizaje alta y su estética por defecto es básica. **Usarla para:** publicaciones y reportes estáticos.
 
-Y existen alternativas: **Altair**, declarativo, y **Bokeh**, también interactivo; **ggplot2** en R; y herramientas de BI como **Power BI** o **Tableau**, que no requieren programar pero ofrecen menos flexibilidad y suelen estar sujetas a licencias. Para nichos: **Missingno** para datos faltantes, y **Folium** y **GeoPandas** para mapas.
+**Seaborn**: rápido, estadística integrada y buena estética por defecto. A cambio: menos control fino y depende de Matplotlib. **Usarla para:** EDA (exploración inicial).
 
-La conclusión: no hay una mejor herramienta, hay una mejor herramienta **para cada restricción**. Y eso es lo que X va a mostrar en vivo." `[CLIC]`
+**Plotly**: interactivo, despliegue web, e integra con Dash y Streamlit. A cambio: el HTML se vuelve pesado con muchos datos y tiene menos control para impresión. **Usarla para:** dashboards y apps.
 
----
+Y existen alternativas: **Altair**, declarativo, y **Bokeh**, también interactivo; **ggplot2** en R; y herramientas de BI como **Power BI** o **Tableau**, que no requieren programar pero ofrecen menos flexibilidad y suelen estar sujetas a licencias.
 
-# BLOQUE 3 (23:00–35:00)
+La conclusión: **no hay una mejor herramienta, hay una mejor herramienta para cada restricción.**.
 
-## Slide 12 · Live Demo "El Viaje del Dato" (23:00–31:30)
+# Slide 19 · Live Demo: notebook de Datos Climáticos (28:00–33:00) (ESTA NO ESTA EN LA DIAPO ORIGINAL PERO PODEMOS USARLA COMO GUÍA PARA LA DEMO REAL)
 
-**Intro (23:00–24:30)**
+**Intro (28:00–29:00)**
 
-"Gracias, Laureano. En vez de hacer el mismo gráfico en tres librerías, armamos un flujo de trabajo real, **'El Viaje del Dato'**. Tomamos un dataset de siniestralidad vial y lo hacemos pasar por tres etapas:
+"En vez de hacer el mismo gráfico en tres librerías, armamos un flujo de trabajo real con un dataset de **emisiones de CO₂ y anomalías de temperatura global** de 10 países (1960–2023). La idea es que cada librería muestre su fortaleza:
 
-1. **Exploración rápida** (Missingno y Seaborn): ¿los datos están completos?, ¿qué relaciones hay?
-2. **Refinamiento estático** (Matplotlib orientado a objetos): una figura lista para un informe.
-3. **Interactivo** (Plotly Express): el mismo hallazgo, ahora explorable en el navegador.
+| Librería | Fortaleza | Gráfico |
+|---|---|---|
+| **Matplotlib** | Control total, anotaciones precisas | Línea temporal con hitos históricos y doble eje Y |
+| **Seaborn** | Estadística automática | Regresión por continente, heatmap de correlación, violinplot |
+| **Plotly** | Interactividad y animación | Mapa coroplético animado, burbujas estilo Gapminder |
 
 Comparto pantalla."
 
-**Notebook completo (para copiar y ejecutar)**
+**Paso 1 — Preparación y limpieza (29:00–30:00)**
 
-```python
-# ───────────── Paso 0: entorno ─────────────
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import plotly.express as px
-import missingno as msno
+"Generamos un dataset sintético basado en patrones reales de Our World in Data: 640 filas, 10 países, 8 columnas. Al ser sintético, no hace falta internet. Introducimos nulos realistas —Nigeria sin datos de CO₂ antes de 1971, India con gaps en los 60s— porque los datos climáticos reales siempre tienen huecos. Los tratamos con interpolación lineal por país para las columnas de CO₂."
 
-plt.style.use('seaborn-v0_8-whitegrid')
+**Paso 2 — Matplotlib: control total (30:00–31:00)**
 
-# Dataset incluido en Seaborn (requiere internet la primera vez)
-df = sns.load_dataset('car_crashes')
-df.to_csv('car_crashes.csv', index=False)   # respaldo por si falla la conexión en la demo
-df.head()
-```
+"Arrancamos con Matplotlib, la fortaleza: control pixel a pixel. Creamos un gráfico de líneas con **doble eje Y** usando `twinx`: CO₂ total de todos los países a la izquierda, anomalía de temperatura a la derecha. Agregamos anotaciones con flechas en los hitos históricos: Protocolo de Kyoto (1997), Acuerdo de París (2015) y la caída del COVID-19 (2020). Sombreamos los períodos clave. Son ~40 líneas de código, pero el resultado es un gráfico de **calidad publicación** que no se puede hacer con Seaborn ni con Plotly."
 
-```python
-# ───────────── Paso 1: auditoría y EDA ─────────────
-# 1.1 Auditoría visual de datos faltantes
-ax = msno.matrix(df, sparkline=False, figsize=(6, 2))
-ax.set_title("Auditoría visual de integridad de datos", fontsize=10)
-plt.show()
+**Paso 3 — Seaborn: estadística automática (31:00–32:00)**
 
-# (Opcional, para que la matriz muestre algo) simular faltantes en una copia:
-# df_sucio = df.copy()
-# df_sucio.loc[[3, 10, 25], 'alcohol'] = None
-# msno.matrix(df_sucio, sparkline=False, figsize=(6, 2)); plt.show()
+"Ahora Seaborn. Hacemos tres gráficos estadísticos en ~15 líneas cada uno:
+- `lmplot` para **regresión con facetado por continente**: ajusta una recta de regresión automáticamente con banda de confianza al 95 % y crea un panel por cada continente.
+- `heatmap` para una **matriz de correlación** con un solo llamado.
+- `violinplot` para ver la **distribución completa** del CO₂ per cápita por continente, no solo los cuartiles como un boxplot.
 
-# 1.2 Relaciones entre variables con Seaborn
-g = sns.pairplot(df, vars=['total', 'speeding', 'alcohol'],
-                 corner=True, diag_kind='kde')
-g.figure.suptitle("EDA rápido: accidentes totales vs. alcohol y velocidad", y=1.02)
-plt.show()
+Seaborn calculó regresiones, bandas de confianza, correlaciones y densidades. En Matplotlib, cada uno de esos cálculos habría que programarlo a mano."
 
-# 1.3 El número detrás del gráfico
-df[['total', 'speeding', 'alcohol']].corr().round(2)
-```
+**Paso 4 — Plotly: interactividad y animación (32:00–33:00)**
 
-```python
-# ───────────── Paso 2: figura estática (Matplotlib OO) ─────────────
-fig, ax = plt.subplots(figsize=(9, 4.5), dpi=100)
+"Por último, Plotly. Hacemos dos gráficos que son casi imposibles con las otras librerías:
+- Un **mapa coroplético animado** con `px.choropleth`: un mapa mundial donde se puede reproducir la animación para ver cómo cambian las emisiones por país año a año. Se puede pausar, avanzar con el slider, pasar el mouse para ver valores exactos.
+- Un **gráfico de burbujas animado** estilo Hans Rosling / Gapminder: cada burbuja es un país, el tamaño representa la población, el color el continente, y la animación avanza por año.
 
-scatter = ax.scatter(
-    df['alcohol'], df['total'],
-    c=df['speeding'], cmap='viridis',
-    s=(df['not_distracted'] - df['not_distracted'].min() + 5) * 4,  # tamaño legible
-    alpha=0.85, edgecolors='white', linewidths=0.5
-)
+~12 líneas de código por gráfico para obtener mapas animados e interactivos. Plotly genera HTML/JavaScript por detrás, lo que permite interactividad que es imposible con librerías estáticas."
 
-# Data-ink ratio: quitar bordes que no aportan
-for side in ['top', 'right']:
-    ax.spines[side].set_visible(False)
-for side in ['left', 'bottom']:
-    ax.spines[side].set_color('#cccccc')
-
-ax.grid(axis='x', visible=False)
-ax.grid(axis='y', linestyle='--', alpha=0.4)
-
-ax.set_title("Alcohol y siniestralidad vial fatal por estado (EE. UU.)",
-             fontsize=12, fontweight='bold', pad=12)
-ax.set_xlabel("Conductores en choques fatales con alcohol (por mil millones de millas)\n"
-              "Tamaño del punto: % de conductores no distraídos", fontsize=10)
-ax.set_ylabel("Conductores en choques fatales (por mil millones de millas)", fontsize=10)
-
-cbar = fig.colorbar(scatter, ax=ax)
-cbar.set_label('Exceso de velocidad', fontsize=9)
-cbar.outline.set_visible(False)
-
-fig.tight_layout()
-fig.savefig('siniestralidad.pdf', bbox_inches='tight')   # backend vectorial PDF
-plt.show()
-```
-
-```python
-# ───────────── Paso 3: versión interactiva (Plotly Express) ─────────────
-fig_plotly = px.scatter(
-    df,
-    x='alcohol', y='total',
-    color='speeding', size='not_distracted', size_max=18,
-    hover_name='abbrev',
-    color_continuous_scale='Viridis',
-    title="<b>Siniestralidad vial por estado (interactivo)</b>",
-    labels={
-        'alcohol': 'Choques fatales con alcohol (por mil millones de millas)',
-        'total': 'Choques fatales totales (por mil millones de millas)',
-        'speeding': 'Exceso de velocidad',
-        'not_distracted': '% no distraídos'
-    },
-    template='plotly_white'
-)
-
-fig_plotly.show()
-
-# Mostrar la "receta": la especificación JSON que viaja al navegador
-print(fig_plotly.to_json()[:400])
-
-# Exportar una página web independiente
-fig_plotly.write_html('siniestralidad_interactivo.html')
-```
-
-> ⚠ Cambios en el código respecto de v3: (1) faltaba cargar `df`; (2) varias instrucciones estaban pegadas en una sola línea (error de sintaxis); (3) `s=not_distracted*10` generaba burbujas enormes y casi iguales (el rango es angosto); (4) Plotly ahora usa **la misma codificación** que Matplotlib (color = velocidad, tamaño = no distraídos) para que sea realmente "el mismo hallazgo"; (5) se agrega `to_json()` y `write_html()` para mostrar en vivo lo que se explicó en la slide de Plotly; (6) las unidades de `car_crashes` son _conductores involucrados en choques fatales por mil millones de millas_, no "siniestros por cada 10.000 habitantes"; (7) se quitó `numpy` por no usarse.
-
-**Narración**
-
-**Paso 0 (24:30–25:00).** "Importamos Pandas y las tres librerías de la tríada, más Missingno. Cargamos `car_crashes`, un dataset de choques fatales por estado de EE. UU. Guardamos un CSV por si falla internet."
-
-**Paso 1 (25:00–27:00).** "Primero, ¿están completos los datos? `msno.matrix` dibuja una fila por registro y deja en blanco lo faltante. Acá todo es negro: el dataset está completo, que es una conclusión válida de la auditoría; en datos reales verían franjas blancas. [Opcional: mostrar la copia con faltantes.]
-
-Después, una sola línea de Seaborn, `pairplot`: densidades en la diagonal y dispersogramas en las esquinas. A simple vista, el alcohol muestra una relación positiva fuerte con el total. Y `.corr()` nos da el número exacto: el gráfico sugiere, la estadística confirma."
-
-**Paso 2 (27:00–29:30).** "Ahora preparamos una figura para un informe, con Matplotlib orientado a objetos. Creamos `fig` y `ax` de forma explícita, sin depender del estado global. Quitamos los bordes superior y derecho —data-ink ratio—, suavizamos la grilla y usamos Viridis. Codificamos **cuatro variables en un plano**: eje X, eje Y, color y tamaño. Y exportamos a PDF: ahí actúa el backend vectorial del que habló Laureano.
-
-Una aclaración de rigor: esto muestra **asociación, no causalidad**, y como 'total' ya incluye a los conductores con alcohol, parte de la relación es esperable por construcción."
-
-**Paso 3 (29:30–31:30).** "Por último, el mismo hallazgo en Plotly Express. Pasamos el mismo DataFrame y casi la misma codificación. `show()` abre el gráfico: paso el cursor y el `hover_name` me dice qué estado es; hago zoom, oculto categorías, y con el ícono de cámara descargo un PNG. Y esto es lo que viaja al navegador: [mostrar `to_json()`] la especificación JSON, la receta. Con `write_html` queda un archivo web independiente que se puede compartir." `[CLIC]`
-
-## Slide 13 · Conclusión y preguntas (31:30–35:00)
+## Slide 20 · Conclusión: qué usar y para qué (33:00–35:00)
 
 "Para cerrar, volvamos a los tres objetivos.
 
-**Arquitectura:** vimos que Matplotlib son tres capas, Seaborn agrega estadística sobre Matplotlib, y Plotly serializa a JSON y delega en el navegador. **Paradigmas:** procedimental, orientado a objetos, agregación automática y especificación declarativa. **Criterio de selección:** Seaborn y Missingno para explorar; Matplotlib cuando necesitamos control absoluto o salida de publicación; Plotly para interactividad y web.
+**Arquitectura:** vimos que Matplotlib son tres capas, Seaborn agrega estadística sobre Matplotlib, y Plotly serializa a JSON y delega en el navegador. **Paradigmas:** procedimental, orientado a objetos, agregación automática y especificación declarativa. **Criterio de selección:** Seaborn para explorar; Matplotlib cuando necesitamos control absoluto o salida de publicación; Plotly para interactividad y web.
 
-No hay que casarse con una librería: la excelencia es un **flujo híbrido**. Y, como mostró Anscombe, ninguna decisión debería apoyarse solo en una tabla de números sin haber mirado el gráfico.
+La diapositiva resume las recomendaciones en una tabla:
 
-El notebook y el código quedan a disposición de la cátedra [COMPLETAR: link o QR]. Muchas gracias; quedamos abiertos a sus preguntas."
+| Situación | Herramienta | Por qué |
+|---|---|---|
+| Explorar un dataset nuevo | Seaborn | Estadística integrada, una línea por gráfico |
+| Figura para paper, tesis o informe | Matplotlib | Control total y salida vectorial |
+| Tablero interactivo para gerencia o web | Plotly (Dash/Streamlit) | Interactividad en el navegador |
+| Auditar datos faltantes o mapear datos geográficos | Missingno / Folium… | Herramientas de nicho |
 
----
+Y los tres mensajes finales:
+1. No hay una mejor librería: hay una mejor **para cada restricción**.
+2. El flujo ideal es **híbrido**: explorar con Seaborn, refinar con Matplotlib, publicar con Plotly.
+3. **Grafiquen siempre** los datos antes de concluir (Anscombe, Datasaurus).
 
-# Anexo A — Preguntas probables
+El notebook y el código quedan a disposición de la cátedra. Muchas gracias; quedamos abiertos a sus preguntas."
 
-1. **¿Por qué no usar solo Plotly, si es interactivo?** Porque para publicaciones impresas o PDF se necesita control fino y salida vectorial, y Matplotlib lo ofrece; además, con muchos puntos los HTML de Plotly se vuelven pesados.
-2. **¿Matplotlib está obsoleto?** No: es la base de Seaborn y de `DataFrame.plot()` de Pandas. Lo que cambió es que hoy se usa más a través de capas de mayor nivel.
-3. **¿Por qué la correlación alcohol–total no prueba que el alcohol cause más accidentes?** Es asociación entre estados; hay variables no incluidas, y además "total" contiene a los conductores con alcohol, así que parte de la relación es mecánica. Para causalidad se necesita otro diseño de análisis.
-4. **¿Y las herramientas de BI (Power BI, Tableau)?** Son una alternativa válida cuando no se requiere programar o el equipo ya las usa; Python ofrece más flexibilidad y se integra con pipelines de datos y automatización.
-5. **¿Por qué importa Anscombe si ya existen tests estadísticos?** Porque los resúmenes numéricos pueden coincidir en datasets muy distintos; el gráfico es una verificación complementaria de los supuestos del modelo.
+# Slide 21 · Cierre y agradecimiento (35:00)
+
+"¡Muchas gracias!"
 
 # Anexo B — Checklist antes de ensayar
 
-- [ ] Slide 2★ (Objetivos) y slide 11★ (Comparativa) agregadas.
-- [ ] Slide 3 de la presentación original ("historia"): Tufte → **1983**.
-- [ ] Slide de mercado laboral: reemplazar "70%" por dato propio verificable.
-- [ ] Slide de Seaborn: quitar "Millones de filas crudas".
-- [ ] Slide de principios de diseño: "Prohibición…" → "Evitar…"; "Contrastes WCAG certificados" → "Contraste accesible (WCAG)".
-- [ ] Slide de fuentes: sumar bibliografía (Tufte 1983, Anscombe 1973, Hunter 2007, documentación oficial de las tres librerías).
-- [ ] Correr el notebook completo en la máquina de la demo, con y sin internet.
-- [ ] Cronometrar cada bloque en voz alta; apuntar a 11 / 12 / 12 minutos.
-- [ ] Reemplazar los `[COMPLETAR]` y confirmar los `⚠ VERIFICAR`.
+- [ ] Correr el notebook `demo.ipynb` completo en la máquina de la demo, sin internet (el dataset es autocontenido).
+- [ ] Verificar que los gráficos de Plotly (mapa y burbujas) se renderizan bien en Jupyter/VS Code.
+- [ ] Cronometrar cada bloque en voz alta; apuntar a 12 / 16 / 7 minutos.
+- [ ] Slide de mercado laboral: confirmar que las fuentes (Randstad, SysArmy 2026) siguen vigentes.
+- [ ] Slide de fuentes: confirmar bibliografía (Tufte 1983, Anscombe 1973, Hunter 2007, Matejka & Fitzmaurice 2017, documentación oficial de las tres librerías).
